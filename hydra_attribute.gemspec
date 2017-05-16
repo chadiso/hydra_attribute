@@ -11,12 +11,12 @@ Gem::Specification.new do |gem|
   gem.test_files            = `git ls-files -- {spec,features,gemfiles}/*`.split("\n")
   gem.name                  = 'hydra_attribute'
   gem.require_paths         = %w(lib)
-  gem.required_ruby_version = Gem::Requirement.new('>= 1.9.2')
+#   gem.required_ruby_version = Gem::Requirement.new('>= 1.9.2')
   gem.version               = HydraAttribute::VERSION
 
-  gem.add_dependency('activerecord', '~> 3.2')
+  gem.add_dependency('activerecord') #, '~> 3.2')
 
-  gem.add_development_dependency('rspec', '~> 2.13')
+  gem.add_development_dependency('rspec') #, '~> 2.13')
   gem.add_development_dependency('sqlite3')
   gem.add_development_dependency('mysql2')
   gem.add_development_dependency('pg')
